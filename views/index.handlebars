@@ -1,0 +1,35 @@
+ <h2 class="page-header">Dashboard</h2>
+<p>Welcome to your dashboard</p>  
+
+<a href='/movies/all'>Search All</a><br/>
+
+<br/>
+<br/>
+Add
+<form method='post' action='/movies/add'>
+	<label>Title</label>
+	<input type='text' name='title'>
+	<label>Year</label>
+	<input type="text" name="year">
+	<button  type="submit" >Submit</button>
+</form>
+<br/>
+<br/>
+Edit
+<form method='post' action='/movies/update'>
+	<label>Id</label>
+	<input type='text' name='id' value="{{this._id}}">
+	<label>Title</label>
+	<input type='text' name='title' value='Black Panther 2'>
+	<label>Year</label>
+	<input type="text" name="year" value='2017'>
+	<button  type="submit" btn-primary submit-btn >Submit</button>
+</form>
+<br/>
+<br/>
+Delete
+<form action='/movies/delete' method='post'>
+	<label>Id</label>
+	<input type='text' name='{{movie.id}}'>
+	<button  type="submit" >Submit</button>
+</form>

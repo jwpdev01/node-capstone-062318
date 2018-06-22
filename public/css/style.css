@@ -1,0 +1,180 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.page-header{
+  margin-top:0;
+}
+
+footer{
+  margin-top:40px;
+}
+
+body {
+    background: url('https://getreelcinemas.com//wp-content/uploads/2015/02/Background-Narrow.jpg') no-repeat fixed center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.hide-value {
+  display: none;
+}
+
+.black {
+  color: black;
+}
+
+button {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn {
+  display: block;
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+input[type=text],
+input[type=password] {
+  height: 30px;
+}
+
+label.login-fld {
+  font-size: 1.5em;
+}
+
+.movie-results {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.results-btn {
+  margin-bottom: 10px;
+}
+
+.results-title {
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.row {
+  margin: 0 10px;
+}
+
+a {
+  color: #bbaa99;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+h1, h2, h5, label {
+  color: #bbaa99;
+}
+
+.movie-results, h3 {
+  color: #white
+}

@@ -1,0 +1,9 @@
+The user story for the movie database.
+
+As a user, I can register my name.
+As a user, I can login after I have registed.
+
+As a logged in user, I can view all movies in the database.
+As a logged in user, I can edit a movie from the database.
+As a logged in user, I can update a movie from the database.
+As a logged in user, I can delete a movie from the database.
