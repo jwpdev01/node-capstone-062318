@@ -16,6 +16,15 @@ let MovieSchema = new Schema({
 	},
 	description: {
 		type: String
+	},
+	actors: {
+		type: String
+	},
+	poster: {
+		type: String
+	},
+	runtime: {
+		type: String
 	}
 });
 

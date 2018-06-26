@@ -4,11 +4,15 @@
 	<title>James Pegram Node Capstone</title>
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/index.css" />
 </head>
 <body>
 	<div class="container">
       <div class="header clearfix">
         <nav>
+          <ul class="nav nav-pills pull-left">
+            <li role="presentation"><h1>Movie Tracker</h1></li>
+          </ul>
           <ul class="nav nav-pills pull-right">
             {{#if user}}
               <li role="presentation"><a href="/">Dashboard</a></li>
@@ -19,8 +23,7 @@
             {{/if}}
           </ul>
         </nav>
-        <h3 >Welcome to James Pegram Movie Project</h3>
-        <h5>The database allows you to track your favorite movies in one easy location</h5>                
+                    
       </div>
 
 
@@ -50,6 +53,8 @@
 
     </div> <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script scrc="/js/bootstrap.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

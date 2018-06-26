@@ -1,0 +1,311 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* iPhone 4 range */
+
+@media (min-width:0px) and (max-width:480px) {
+    html {
+        font-size: 1.0em;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .app-detail {
+        font-size: .8em;
+        text-align: center;
+        margin: 10px 0;
+    }
+    fieldset {
+        width: 100%;
+        margin: 0 auto;
+    }
+    legend {
+        font-size: .8em;
+    }
+    .search-bar {
+        width: 75%;
+    }
+    main,
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: underline;
+    }
+
+    .js-poster {
+        width: 76%;
+        margin: 0 auto;
+    }
+
+    
+    .movie-poster,
+    .thumb {
+        border: 5px double white;
+    }
+
+    .img-link {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .thumb {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .movie-title {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .movie-actors,
+    .movie-rated,
+    .movie-runtime,
+    .movie-description {
+        font-size: .9em;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .movie-runtime {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: .9em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    hr.style-eight {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+}
+
+/* larger than iPhone landscape, an in the iPad portrait range */
+
+@media (min-width:481px) and (max-width:768px) {
+    html {
+        font-size: 1.1em;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .app-detail {
+        font-size: .8em;
+        text-align: center;
+        margin: 10px 0;
+    }
+    fieldset {
+        width: 70%;
+        margin: 0 auto;
+    }
+    legend {
+        font-size: .8em;
+    }
+    .search-bar {
+        width: 85%;
+    }
+    main,
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .js-poster {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img-link {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .thumb {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .movie-title {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .movie-actors,
+    .movie-rated,
+    .movie-runtime,
+    .movie-description {
+        font-size: .9em;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .title {
+        font-size: .9em;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .movie-poster,
+    .thumb {
+        border: 5px double white;
+    }
+
+    hr.style-eight {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+}
+
+/* bigger than iPad portrait  */
+
+@media (min-width:769px) {
+    html {
+        font-size: 1.5em;
+    }
+    .show-mobile {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
+    .app-detail {
+        font-size: .8em;
+        text-align: center;
+        margin: 10px 0;
+    }
+    fieldset {
+        width: 55%;
+        margin: 0 auto;
+    }
+    legend {
+        font-size: .8em;
+    }
+    .search-bar {
+        width: 90%;
+    }
+    main,
+    header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .js-poster {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .img-link {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .thumb {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .title {
+        text-align: center;
+        font-size: .6em;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+
+    .movie-title {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .movie-actors,
+    .movie-rated,
+    .movie-runtime,
+    .movie-description {
+        font-size: .9em;
+        text-align: center;
+    }
+    .movie-rated,
+    .movie-runtime {
+        text-align: center;
+    }
+
+    .movie-poster,
+    .thumb {
+        border: 5px double white;
+    }
+
+
+
+    hr.style-eight {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+}
+
+html {
+    background: url('https://getreelcinemas.com//wp-content/uploads/2015/02/Background-Narrow.jpg') no-repeat fixed center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.error {
+    margin-top: 50px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-poster {
+    width: 100%;
+}
+
+.movie-actors {
+    margin: 5px 0 10px 0;
+}
+
+header {
+    margin-bottom: 50px;
+}

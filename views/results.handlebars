@@ -1,9 +1,24 @@
-<h3 align='center' class='results-title'>Movie Results</h3>
-  
-    {{#each movies_list}}
+<!--<h3 align='center' class='results-title'>Movie Results</h3>-->
+
+<header role='banner'>
+    <div class="col-12">
+
+    <h1>Movie Search</h1>
+      <div class='app-detail'>Search movie titles for plots, actors and trailers.</div>
+      <form class='form-submit'>
+        <fieldset>
+             <legend for='search-bar' >Enter a movie title</legend>
+             <div class='search'>
+               <input type='text' class='search-bar' name='search-bar'    placeholder="enter a movie title" />
+               <button type="submit" class="btn btn-primary submit-btn">Search</button>
+              </div>
+          </fieldset>
+        </form>
+</header>
+<div class='movie-results'>
+  {{#each movies_list}}
     
    <div class="row" >      
-      
     <div class="col-lg-4 movie-results" align='center'>{{title}}</div>
     <div class="col-lg-2 movie-results" align='center'>{{year}}</div>
     <div class="col-lg-2 movie-results" align='center'>{{rating}}</div>
@@ -21,30 +36,92 @@
       </form>
 
     </div>
-</div>
+  </div>
   {{/each}}   
+</div>
   
 <br/>
 <hr/>
 <br/>
 
-<form method="post" action="/movies/add">
-<div class="form-group">
-    <input type='text' name='id1' value="{{{_id1}}}" class='black hide-value'>
-  </div>
-  <div class="form-group">
-    <label>Title</label>
-    <input type="text" class="form-control" placeholder="Title" name="title" value = "{{{title1}}}" class='black' required>
-  </div>
-  <div class="form-group">
-    <label>Year</label>
-    <input type="text" class="form-control" placeholder="Year" name="year" value = "{{{year1}}}" class='black' required>
-  </div>
-   <div class="form-group">
-    <label>Rating</label>
-    <input type="text" class="form-control" placeholder="Rating" name="rating" value = "{{{rating1}}}" class='black' required>
-  </div>
+<row class='edit'>
+  <div class="col-lg-12">   
+    <form method="post" action="/movies/add">
+      <div class="form-group">
+          <input type='text' name='id1' value="{{{_id1}}}" class='black hide-value'>
+        </div>
+        <div class="form-group col-lg-6">
+          <label>Title</label>
+          <input type="text" class="form-control" placeholder="Title" id="title" name="title" value = "{{{title1}}}" class='black' required>
+        </div>
+        <div class="form-group col-lg-6">
+          <label>Year</label>
+          <input type="text" class="form-control" placeholder="Year" id="year" name="year" value = "{{{year1}}}" class='black' required>
+        </div>
+         <div class="form-group col-lg-6">
+          <label>Rating</label>
+          <input type="text" class="form-control" placeholder="Rating" id="rating" name="rating" value = "{{{rating1}}}" class='black' required>
+        </div>
+        <div class="form-group col-lg-6">
+        <label>Runtime</label>
+          <input type="text" class="form-control" placeholder="Runtime" id="runtime" name="runtime" value = "{{{runtime1}}}" class='black' required>
+        </div>
+         <div class="form-group col-lg-12">
+        <label>Actors</label>
+          <input type="text" class="form-control" placeholder="Actors" id="actors" name="actors" value = "{{{actors1}}}" class='black' required>
+        </div>
 
-  <button type="submit" class="btn btn-primary submit-btn">Submit</button>
-</form>
+         <div class="form-group col-lg-12">
+        <label>Description</label>
+          <input type="text" class="form-control" placeholder="Description" id="description" name="description" value = "{{{description1}}}" class='black' required>
+        </div>
+         <div class="form-group col-lg-12">
+        <label>Poster</label>
+          <input type="text" class="form-control" placeholder="Poster" id="poster" name="poster" value = "{{{poster1}}}" class='black' required>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Update</button>
+    </form>
+  </div>
+</row>
+
+
+
+<main class='container' aria-live="assertive" role='main'>
+      <div class="row">
+        <div class="col col-12">
+          <div class='movie-header'>
+            <div class='movie-title'></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col col-3 hide-mobile">
+          <div class='movie-actors'></div>
+          <div class='movie-description'></div>
+          <div class='movie-rated'></div>
+          <div class='movie-runtime'></div>
+        </div>
+
+        <div class="col col-6">
+          <div class='movie-container'>
+            <div class='js-poster'></div>
+          </div>
+        </div>
+
+        <div class="col col-3 show-mobile">
+          <div class='movie-actors'></div>
+          <div class='movie-description'></div>
+          <div class='movie-rated'></div>
+          <div class='movie-runtime'></div>
+        </div>
+
+        <div class="col col-3">
+          <div class="video-container"></div>
+        </div>
+
+      </div>
+</main>
 

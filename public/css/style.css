@@ -125,7 +125,7 @@ button {
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 input[type=text],
@@ -171,10 +171,14 @@ a:focus {
   outline-offset: -2px;
 }
 
-h1, h2, h5, label {
+h2, h5, label {
   color: #bbaa99;
 }
 
 .movie-results, h3 {
   color: #white
+}
+
+.search-bar {
+  color: black;
 }
